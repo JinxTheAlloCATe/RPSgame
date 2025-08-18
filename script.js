@@ -1,3 +1,6 @@
+let humanScore = 0;
+let computerScore = 0;
+
 function getcomputerChoice () {
     let computerChoice = Math.floor(Math.random() * 4);
     if (computerChoice === 0) {
