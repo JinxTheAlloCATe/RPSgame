@@ -1,5 +1,5 @@
 function getcomputerChoice () {
-    let computerChoice = Math.floor(Math.random() * 4);
+    let computerChoice = Math.floor(Math.random() * 3);
     if (computerChoice === 0) {
         return "rock"
     } else if (computerChoice === 1) {
@@ -19,11 +19,6 @@ function getHumanChoice () {
 function playGame () {
     let humanScore = 0;
     let computerScore = 0;
-    playRound(getHumanChoice(), getcomputerChoice());
-    playRound(getHumanChoice(), getcomputerChoice());
-    playRound(getHumanChoice(), getcomputerChoice());
-    playRound(getHumanChoice(), getcomputerChoice());
-    playRound(getHumanChoice(), getcomputerChoice());
     function playRound (humanChoice, computerChoice) {
         if (humanChoice === "paper" && computerChoice === "paper") {
             return "Draw! You both chose Paper."
