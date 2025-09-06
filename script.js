@@ -19,6 +19,12 @@ function getHumanChoice () {
 function playGame () {
     let humanScore = 0;
     let computerScore = 0;
+    const rockButton = document.querySelector("#rock");
+    rockButton.addEventListener("click", playRound("rock", getcomputerChoice));
+    const scissorsButton = document.querySelector("#scissors");
+    scissorsButton.addEventListener("click", playRound("scissors", getcomputerChoice));
+    const paperButton = document.addEventListener("#paper");
+    paperButton.addEventListener("click", playRound("paper", getcomputerChoice));
     function playRound (humanChoice, computerChoice) {
         if (humanChoice === "paper" && computerChoice === "paper") {
             return "Draw! You both chose Paper."
